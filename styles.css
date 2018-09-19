@@ -82,24 +82,7 @@ header a:hover {
 #showcase p {
     font-size: 20px;
 }
-/* news */
-#newsletter {
-    padding: 15px;
-    color: #ffffff;
-    background: #35424a;
-}
-#newsletter h1 {
-    float: left;
-}
-#newsletter form {
-    float: right;
-    margin-top: 15px;
-}
-#newsletter input[type="email"] {
-    padding: 4px;
-    height: 25px;
-    width: 250px;
-}
+
 /* boxes */
 #boxes {
     margin-top: 20px;
@@ -114,11 +97,23 @@ header a:hover {
     width: 90px;
 }
 footer {
-    padding: 20px;
-    margin-top: 20px;
+    padding: 3px;
+    margin-top: 10px;
     color: #ffffff;
-    background-color: #e8491d;
+    background-color: #410b0d;
+    text-align: right;
+}
+/* types page */
+#showcase__types {
+    min-height: 550px;
+    background-image: url("img/types.jpeg");
+    background-size: cover;
     text-align: center;
+    color: #ffffff;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 /* media queries */
 @media(max-width: 768px){
