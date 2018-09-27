@@ -58,7 +58,7 @@ header a:hover {
 /* showcase */
 #showcase {
     min-height: 650px;
-    background-image: url("img/hero.jpeg");
+    background-image: url("img/home.jpg");
     font-family: 'Merriweather Sans', sans-serif;
     background-size: cover;
     text-align: center;
@@ -86,26 +86,18 @@ header a:hover {
     height: 20%;
     margin: 0 auto;
     font-family: 'Merriweather Sans', sans-serif;
-    color: #ffffff;
+    color: red;
 }
 .history__option:hover {
     transform: scale(1.1);
 }
 .history__option {
-    background-image: url("img/history-option.jpeg");
-    height: 40vh;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;  
+    height: 40vh;  
     text-align: center;   
     transition: transform .4s;
 }
 .types__option {
-    background-image: url("img/types.jpeg");
-    height: 40vh;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;  
+    height: 40vh;  
     text-align: center; 
     transition: transform .4s;
 }
@@ -113,11 +105,7 @@ header a:hover {
     transform: scale(1.1);
 }
 .distil__option {
-    background-image: url("img/distil.jpeg");
-    height: 40vh;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;  
+    height: 40vh; 
     text-align: center; 
     transition: transform .4s;
 }
@@ -125,11 +113,7 @@ header a:hover {
     transform: scale(1.1);
 }
 .glass__option {
-    background-image: url("img/history-hero.jpeg");
-    height: 40vh;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;  
+    height: 40vh; 
     text-align: center; 
     transition: transform .4s;
 }
