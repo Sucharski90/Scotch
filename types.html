@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="img/browser.png">
+    <link rel="stylesheet" href="./node_modules/sal.js/dist/sal.css">
     <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Scotch</title>
@@ -16,9 +17,10 @@
                 <h1><span class="highlight">World of</span> <span class="scotch">Scotch</span></h1>
             </div>
             <nav>
-                <li><a href="index.html">Home</a></li>
-                <li class="current"><a href="types.html">Types</a></li>
-                <li><a href="distilaries.html">Distilaries</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="current"><a href="types.html">Regions</a></li>
+                    <li><a href="history.html">Distilling</a></li>
+                    <li><a href="history.html">Glasses</a></li>
             </nav>
         </div>
     </header>
@@ -33,36 +35,71 @@
     
 
     <section id="regions">
-            <div class="type">
+            <div class="type" data-sal-duration="1200" data-sal="zoom-in" data-sal-delay="200" data-sal-easing="ease-out-bounce">
                 <h3>Islay</h3>
                 <p>Although they don’t sound appetizing, the mixture off brine, sea wood, smoke, and salt add a distinctive and intense flavor. It's an acquired taste.</p>
+                <button class="modal-btn" id="islay">Show Top Five</button>
             </div>
     
-            <div class="type">
+            <div class="type" data-sal-duration="1200" data-sal="zoom-in" data-sal-delay="200" data-sal-easing="ease-out-bounce">
                 <h3>Campbeltown</h3>
                 <p>Among the previously mentioned brine and smoke, enthusiasts also praise the area's distinctive (and, unless you have the palate for it, a bit off-putting) flavor of wet dog, also called wet wool.</p>
+                <button class="modal-btn" id="campbeltown">Show Top Five</button>
             </div>
     
-            <div class="type">
+            <div class="type" data-sal-duration="1200" data-sal="zoom-in" data-sal-delay="200" data-sal-easing="ease-out-bounce">
                 <h3>Speyside</h3>
                 <p>Varies, but generally smoky and deeply complex with hints of apple, nutmeg and vanilla.</p>
+                <button class="modal-btn" id="speyside">Show Top Five</button>
             </div>
     
-            <div class="type">
+            <div class="type" data-sal-duration="1200" data-sal="zoom-in" data-sal-delay="200" data-sal-easing="ease-out-bounce">
                 <h3>Lowland</h3>
                 <p>Floral tones like grass and honeysuckle pair with sweeter notes like toffee and cinnamon.</p>
+                <button class="modal-btn" id="lowlands">Show Top Five</button>
             </div>
             
-            <div class="type">
+            <div class="type" data-sal-duration="1200" data-sal="zoom-in" data-sal-delay="200" data-sal-easing="ease-out-bounce">
                 <h3>Highland</h3>
                 <p>Because of just how large this area, the amount of variation is huge, but you can generally expect especially bold flavors, including heather and dried fruit.</p>
+                <button class="modal-btn" id="highlands">Show Top Five</button>
             </div>
     
         </section>
 
     <footer>
+        <i class="fab fa-github"></i>
+        <i class="fab fa-linkedin"></i>
         <p>Created by Matt Sucharski</p>
     </footer>
     
+
+    <!-- modal -->
+    <div id="simpleModal" class="modal">
+            <div class="modal-content">
+      
+                <div class="modal-header">
+                    <span class="closeBtn">&times;</span>
+                    <h2><i class="far fa-sun"></i>Score</h2>
+                </div>
+      
+                <div class="modal-body">
+                    <button class="next">></button>
+                    <button class="back"><</button>
+                <h1 id="name"></h1> 
+                <h3 id="age">Age:</h3>
+                <h3 id="distillary">Distilary:</h3>
+
+                </div>
+      
+                <div class="modal-footer">
+                    
+                </div>
+            </div>
+          </div>
+
+    <script src="main.js"></script>
+    <script src="./node_modules/sal.js/dist/sal.js"></script>
+    <script>sal();</script>
 </body>
 </html>
