@@ -235,7 +235,14 @@ let nextScotch = () => {
     } else {islayIndex++}
     openIslay();  
 }
+let lastScotch = () => {
+    if(islayIndex == 0) {
+        islayIndex = 4
+    } else {islayIndex--}
+    openIslay();
+}
 next.addEventListener('click', nextScotch);
+back.addEventListener('click', lastScotch);
 
 // grab next and back btn camp
 const nextCampBtn = document.querySelector('.next-camp');
@@ -248,7 +255,14 @@ let nextCamp = () => {
     } else {campbeltownIndex++}
     openCamp();  
 }
+let lastCamp = () => {
+    if(campbeltownIndex == 0) {
+        campbeltownIndex = 4
+    } else {campbeltownIndex--}
+    openCamp();
+}
 nextCampBtn.addEventListener('click', nextCamp);
+backCampBtn.addEventListener('click', lastCamp);
 
 // grab next and back btn spey
 const nextSpeyBtn = document.querySelector('.next-spey');
@@ -261,7 +275,14 @@ let nextSpey = () => {
     } else {speysideIndex++}
     openSpey();  
 }
+let lastSpey = () => {
+    if(speysideIndex == 0) {
+        speysideIndex = 4
+    } else {speysideIndex--}
+    openSpey();
+}
 nextSpeyBtn.addEventListener('click', nextSpey);
+backSpeyBtn.addEventListener('click', lastSpey);
 
 // grab next and back btn low
 const nextLowBtn = document.querySelector('.next-low');
@@ -274,20 +295,35 @@ let nextLow = () => {
     } else {lowlandIndex++}
     openLow();  
 }
+let lastLow = () => {
+    if(lowlandIndex == 0) {
+        lowlandIndex = 4
+    } else {lowlandIndex--}
+    openLow();
+}
 nextLowBtn.addEventListener('click', nextLow);
+backLowBtn.addEventListener('click', lastLow);
 
 // grab next and back btn high
 const nextHighBtn = document.querySelector('.next-high');
 const backHighBtn = document.querySelector('.back-high');
 
-// moves to next scotch islay
+// moves to next scotch high
 let nextHigh = () => {
     if(highlandIndex == 4) {
         highlandIndex = 0
     } else {highlandIndex++}
     openHigh();  
 }
+let lastHigh = () => {
+    if(highlandIndex == 0) {
+        highlandIndex = 4
+    } else {highlandIndex--}
+    openHigh();
+}
 nextHighBtn.addEventListener('click', nextHigh);
+backHighBtn.addEventListener('click', lastHigh);
+
 // close modal on outside click
 function outsideClick(e) {
   if(e.target == modalIslay || e.target == modalCamp || e.target == modalSpey || e.target == modalLow || e.target == modalHigh) {
